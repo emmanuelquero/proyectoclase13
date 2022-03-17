@@ -1,3 +1,4 @@
+@import "colores" ;
 body {
     margin: 0;  
    ;}
@@ -18,7 +19,7 @@ body {
       transform: scale(3.1); }
     }
 .divv {
-    background-image: linear-gradient(to right, #cec6c6, #194074);
+    background-color: (#143e7c);
     border: 2px solid black; }
     .divv a {
       color: white;

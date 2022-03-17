@@ -1,3 +1,48 @@
+.divv {
+  background-color: #143e7c; }
+
+a {
+  color: white; }
+
+.barra {
+  background-color: blue;
+  color: white; }
+
+.precios {
+  background-color: blue;
+  color: black; }
+
+.tituloprecio {
+  color: black; }
+
+.descripcion {
+  color: black;
+  background-color: #143e7c; }
+
+.titulo {
+  color: black;
+  background-color: beige; }
+
+.footer {
+  background-color: black; }
+  .footer p {
+    color: white; }
+
+.formulario {
+  background-color: beige; }
+
+.titulofotos {
+  color: black;
+  background-color: blue; }
+
+.tituloproductos {
+  color: black;
+  background-color: blue; }
+
+.btn-wsp {
+  color: white;
+  background-color: #0df053; }
+
 body {
   margin: 0; }
 
@@ -17,7 +62,7 @@ body {
     transform: scale(3.1); }
 
 .divv {
-  background-image: linear-gradient(to right, #cec6c6, #194074);
+  background-color: #143e7c;
   border: 2px solid black; }
 
 .divv a {

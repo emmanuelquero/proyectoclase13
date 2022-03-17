@@ -1,0 +1,52 @@
+$fondo_primario: #143e7c;
+$color_primario: white;
+$fondo_secundario: blue;
+$color_secundario: black;
+$fondo_terciario: beige;
+$fondo_cuarto: black;
+$fondo_quinto: #0df053;
+
+.divv { 
+    background-color: $fondo_primario;
+}
+a {
+    color: $color_primario;
+}
+.barra {
+    background-color: $fondo_secundario;
+    color: white;
+}
+.precios {
+    background-color: $fondo_secundario;
+    color: $color_secundario;
+}
+.tituloprecio {
+    color: $color_secundario;
+}
+.descripcion {
+    color: $color_secundario;
+    background-color: $fondo_primario;
+}
+.titulo {
+    color: $color_secundario;
+    background-color: $fondo_terciario;
+}
+.footer {
+    background-color: $fondo_cuarto;
+    p { color: $color_primario;}
+    }
+.formulario{
+    background-color: $fondo_terciario;
+}
+.titulofotos {
+    color: $color_secundario;
+    background-color: $fondo_secundario;
+}
+.tituloproductos {
+    color: $color_secundario;
+    background-color: $fondo_secundario;
+}
+.btn-wsp {
+    color: $color_primario;
+    background-color: $fondo_quinto;
+}
