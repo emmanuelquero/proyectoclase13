@@ -34,7 +34,8 @@
 
 body {
   margin: 0;
-  background-image: url(imagenes/fondoliso.jpg); }
+  background-image: url(/fondoliso.jpg)
+ ;}
 
 .imagenn {
   transition: 5s; }
