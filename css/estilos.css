@@ -1,5 +1,5 @@
 .divv {
-  background-color: #143e7c; }
+  background-color: darkblue; }
 
 a {
   color: white; }
@@ -17,7 +17,7 @@ a {
 
 .descripcion {
   color: black;
-  background-color: #143e7c; }
+  background-color: darkblue; }
 
 .titulo {
   color: black;
@@ -62,7 +62,7 @@ body {
     transform: scale(3.1); }
 
 .divv {
-  background-color: #143e7c;
+  background-color: darkblue;
   border: 2px solid black; }
 
 .divv a {
