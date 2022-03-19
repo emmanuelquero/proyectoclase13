@@ -1,4 +1,5 @@
 @import "colores";
+@import "estructura";
 $margenderecho: 5px;
 $blue: blue; 
 $fuente: 20px;
@@ -90,7 +91,6 @@ body {
     }
     border: 2px solid black;
     text-align: center;
-    margin: 0 auto;
     margin-bottom: 10px;
     transition: 4s; 
     &:hover {
