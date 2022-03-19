@@ -1,6 +1,18 @@
 @import "colores";
-/* operaciones*/
 $margenderecho: 5px;
+$blue: blue; 
+$fuente: 20px;
+$fuenteletra: estilo;
+$mostrar:true;
+$ocultar:false;
+
+$indexx :(divv:darkblue, barra:blue, precios:blue, footer:black);
+
+@each $a, $b in $indexx {
+    .#{$a} {
+        background-color: $b;
+    }
+}
 body {
     margin: 0;  
    ;}
@@ -25,22 +37,31 @@ body {
     border: 2px solid black; }
     .divv a {
       color: white;
+      @if $fuenteletra == verdanaa {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      } @else if $fuenteletra == ariall {
+          font-family: Arial, Helvetica, sans-serif;
+      } @else {
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         
+      }
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       text-decoration: none; }
   
 .headerr {
     background-image: linear-gradient(to bottom, white, blue);
-    border: 2px solid black;
+    @if $mostrar {
+        border: 2px solid black;}
     text-align: center;
-    font-size: 40px; 
+    font-size: ($fuente * 2);
      p {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 40px;
+      font-size: ($fuente*2);
       font-style: italic; }
      }
   
 .barra {
-    background-color: blue;
+    background-color: $blue;
     display: inline-block;
     border: 3px solid black;
     color: white;
@@ -52,6 +73,7 @@ body {
     border: 1px solid black;
     background-image: linear-gradient(to bottom, black, blue); }
 }
+
 .menu {
     padding: 10px 30px; 
      ul {
@@ -61,8 +83,11 @@ body {
       }
     }
 .precios {
-    background-color: blue;
+    background-color: $blue;
     color: black;
+    @if $ocultar {
+        display: block;
+    }
     border: 2px solid black;
     text-align: center;
     margin: 0 auto;
@@ -79,7 +104,7 @@ body {
   
 .descripcion {
     text-align: center;
-    font-size: 15px;
+    font-size: ($fuente*2)-25;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 3px solid black;
     background-color: #143e7c;
@@ -110,12 +135,12 @@ nav {
     height: max-content;
     width: 100px;
     height: 16px;
-    font-size: 12px;
+    font-size: ($fuente)+2;
     transition: all 2s; 
     &:hover {
       width: 200px;
       height: 32px;
-      font-size: 18px;
+      font-size: ($fuente)-2;
       border: 1px solid black; }
     }
 .locales {
@@ -132,19 +157,27 @@ nav {
     padding: 20px;
     border: 4px solid black;
     border-style: groove; }
-  
+.productos--aceptar{
+    @extend.productos;
+    @extend.subrayado;
+    background-color: lightblue;
+    color: black;
+    } 
+.subrayado {
+    text-decoration: underline;
+}
 .imagenproducto {
     transition: 4s;   
 &:hover {
     width: 400px;
     height: 400px;
-    font-size: 48px;
+    font-size: ($fuente*2)+8;
     border: 1px solid black; }
 }
 .titulofotos {
     text-align: center;
     border: 4px solid black;
-    background-image: blue;
+    background-image: $blue;
     color: black;
     margin: 10px;
     padding: 20px; }
@@ -152,7 +185,7 @@ nav {
 .tituloproductos {
     text-align: center;
     border: 4px solid black;
-    background-color: blue;
+    background-color: $blue;
     color: black;
     margin: 10px;
     padding: 20px; }
@@ -176,7 +209,7 @@ nav {
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    font-size: 30px;
+    font-size: ($fuente)+10;
     box-shadow: 0px 1px 10px rgba 0, 0, 0, 0.3;
     z-index: 100; 
     &:hover {
@@ -186,7 +219,7 @@ nav {
     }
   
 .parrafoproductos {
-    font-size: 28px;
+    font-size: ($fuente)+8;
     font-style: italic; }
   
 .logohistoria {
@@ -200,3 +233,12 @@ nav {
 .distanciatitulo {
     margin-top: 10px;
   }
+@mixin sizes ($width,$height) {
+    height: $height;
+    width: $width;
+}    
+.imagenprincipal {
+    @include sizes(300px, 250px )
+
+}
+  

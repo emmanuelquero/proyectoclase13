@@ -43,7 +43,18 @@ a {
   color: white;
   background-color: #0df053; }
 
-/* operaciones*/
+.divv {
+  background-color: darkblue; }
+
+.barra {
+  background-color: blue; }
+
+.precios {
+  background-color: blue; }
+
+.footer {
+  background-color: black; }
+
 body {
   margin: 0; }
 
@@ -68,6 +79,7 @@ body {
 
 .divv a {
   color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: none; }
 
@@ -151,7 +163,7 @@ nav {
   height: max-content;
   width: 100px;
   height: 16px;
-  font-size: 12px;
+  font-size: 22px;
   transition: all 2s; }
   .formulario:hover {
     width: 200px;
@@ -167,12 +179,19 @@ nav {
   border: 4px solid black;
   border-style: dashed; }
 
-.productos {
+.productos, .productos--aceptar {
   background-image: radial-gradient(blue, cyan, white);
   margin: 10px;
   padding: 20px;
   border: 4px solid black;
   border-style: groove; }
+
+.productos--aceptar {
+  background-color: lightblue;
+  color: black; }
+
+.subrayado, .productos--aceptar {
+  text-decoration: underline; }
 
 .imagenproducto {
   transition: 4s; }
@@ -240,3 +259,7 @@ nav {
 
 .distanciatitulo {
   margin-top: 10px; }
+
+.imagenprincipal {
+  height: 250px;
+  width: 300px; }
