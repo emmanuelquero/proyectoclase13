@@ -76,8 +76,9 @@ body {
 }
 
 .menu {
-    padding: 10px 30px; 
+    padding: 10px 30px;
      ul {
+      width: auto;   
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
       li {
         text-decoration: overline; }
@@ -87,8 +88,7 @@ body {
     background-color: $blue;
     color: black;
     @if $ocultar {
-        display: block;
-    }
+        display: block;}    
     border: 2px solid black;
     text-align: center;
     margin-bottom: 10px;
@@ -124,9 +124,6 @@ body {
       color: white;
       text-align: center; }
      }
-nav {
-    margin-top: 10px; }
-  
 .formulario {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -134,12 +131,13 @@ nav {
     background-color: beige;
     height: max-content;
     width: 100px;
-    height: 16px;
+    height: 45px;
+    margin-bottom: 10px;
     font-size: ($fuente)+2;
     transition: all 2s; 
     &:hover {
       width: 200px;
-      height: 32px;
+      height: 70px;
       font-size: ($fuente)-2;
       border: 1px solid black; }
     }
