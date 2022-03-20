@@ -4,16 +4,33 @@
 $margenderecho: 5px;
 $blue: blue; 
 $fuente: 20px;
+/*condicionales*/
 $fuenteletra: estilo;
 $mostrar:true;
 $ocultar:false;
-
+$temperatura: 20;
+/*maps*/
 $indexx :(divv:darkblue, barra:blue, precios:blue, footer:black);
-
 @each $a, $b in $indexx {
     .#{$a} {
         background-color: $b;
     }
+}
+/*bucle*/
+$colorindex :(divv:white, barra: white, precios : black, footer:white);
+@each $a, $b in $colorindex {
+    .#{$a} {
+        color: $b;
+    }
+}
+/*mapget*/
+$estilos: (
+    distancia:(10px, 30px)
+    margenn:(10px)
+);
+.barra {
+    padding:map-get($estilos, distancia);
+    margin-right: map-get($estilos,margenn);
 }
 body {
     margin: 0;  
@@ -120,7 +137,15 @@ body {
     background-color: beige; }
   
 .footer {
-    background-color: black;
+    @if $temperatura <40 {
+        background-color: black;
+    } @else if $temperatura <60 {
+        background-color: orange;
+    } @else if ($temperatura <=100) {
+        background-color: red;
+    } @else {
+        background-color: yellow;
+    }
     border: 2px solid black;
     margin-bottom: 0px; 
      p {

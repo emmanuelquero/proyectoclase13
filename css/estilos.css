@@ -85,9 +85,11 @@ body {
 
 .precios {
   border: 2px solid black;
+  text-align: center;
   margin-bottom: 10px;
-  display: block;
   transition: 4s; }
+  .precios:hover {
+    transform: scale(2.5); }
 
 .tituloprecio {
   border: 2px solid black;
@@ -202,6 +204,8 @@ body {
   height: 250px;
   width: 300px; }
 
+/*condicionales*/
+/*maps*/
 .divv {
   background-color: darkblue; }
 
@@ -213,6 +217,23 @@ body {
 
 .footer {
   background-color: black; }
+
+/*bucle*/
+.divv {
+  color: white; }
+
+.barra {
+  color: white; }
+
+.precios {
+  color: black; }
+
+.footer {
+  color: white; }
+
+/*mapget*/
+.barra {
+  padding: 10px, 30px; }
 
 body {
   margin: 0; }
