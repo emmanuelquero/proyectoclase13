@@ -85,11 +85,9 @@ body {
 
 .precios {
   border: 2px solid black;
-  text-align: center;
   margin-bottom: 10px;
+  display: block;
   transition: 4s; }
-  .precios:hover {
-    transform: scale(2.5); }
 
 .tituloprecio {
   border: 2px solid black;
@@ -281,6 +279,8 @@ body {
   border: 2px solid black;
   text-align: center;
   margin-bottom: 10px;
+  margin-left: 400px;
+  margin-right: 400px;
   transition: 4s; }
   .precios:hover {
     transform: scale(2.5); }
