@@ -25,12 +25,16 @@ $colorindex :(divv:white, barra: white, precios : black, footer:white);
 }
 /*mapget*/
 $estilos: (
-    distancia:(10px, 30px)
-    margenn:(10px)
+    distancia:10px 30px,
+    margenn:10px, 
+    ancho:400px    
 );
 .barra {
     padding:map-get($estilos, distancia);
     margin-right: map-get($estilos,margenn);
+}
+.formulario {
+    width: map-get($estilos, ancho); 
 }
 body {
     margin: 0;  
@@ -183,6 +187,7 @@ body {
     padding: 20px;
     border: 4px solid black;
     border-style: groove; }
+    /*extend*/
 .productos--aceptar{
     @extend.productos;
     @extend.subrayado;
@@ -259,12 +264,21 @@ body {
 .distanciatitulo {
     margin-top: 10px;
   }
+/*mixin*/
 @mixin sizes ($width,$height) {
     height: $height;
     width: $width;
 }    
 .imagenprincipal {
     @include sizes(300px, 250px )
-
 }
-  
+@mixin sizes2($text,$border,$background,$margin,$padding) {
+    text-align: $text;
+    border:$border;
+    background-color: $background;
+    margin: $margin;
+    padding: $padding;
+} 
+.tituloproductos {
+    @include sizes2(center,4px solid black ,blue ,10px ,20px )
+}
